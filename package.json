@@ -1,0 +1,23 @@
+{
+  "name": "write-me-notes",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abauer424/write-me-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abauer424/write-me-notes/issues"
+  },
+  "homepage": "https://github.com/abauer424/write-me-notes#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
