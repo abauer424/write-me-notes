@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const notes = require('./db/db.json');
+const notes = require('./Develop/db/db.json');
 // Helper method for generating unique ids
 
 const PORT = 3001;
@@ -14,20 +14,25 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
+  res.sendFile(path.join(__dirname, './Develop/public/index.html'))
+);
+
+app.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, './Develop/public/notes.html'))
+);
+
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, './Develop/public/notes.html'))
 );
 
 // GET request for notes
 app.get('/api/notes', (req, res) => {
-  // Send a message to the client
-  res.json(`${req.method} request received to get notes`);
+  res.json(notes);
 
-  // Log our request to the terminal
-  console.info(`${req.method} request received to get notes`);
 });
 
 // GET request for a single note
-app.get('/api/notes/:note_id', (req, res) => {
+app.get('/api/notes/:note', (req, res) => {
   if (req.body && req.params.note_id) {
     console.info(`${req.method} request received to get a single a note`);
     const noteId = req.params.note_id;
@@ -38,7 +43,7 @@ app.get('/api/notes/:note_id', (req, res) => {
         return;
       }
     }
-    res.json('Note ID not found');
+    res.json('Note not found');
   }
 });
 
@@ -60,7 +65,7 @@ app.post('/api/notes', (req, res) => {
     };
 
     // Obtain existing notes
-    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+    fs.readFile('./Develop/db/db.json', 'utf8', (err, data) => {
       if (err) {
         console.error(err);
       } else {
@@ -72,7 +77,7 @@ app.post('/api/notes', (req, res) => {
 
         // Write updated notes back to the file
         fs.writeFile(
-          './db/db.json',
+          './Develop/db/db.json',
           JSON.stringify(parsedNotes, null, 4),
           (writeErr) =>
             writeErr
