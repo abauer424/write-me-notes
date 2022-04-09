@@ -6,7 +6,9 @@ For this assignment, our task was to create that can be used to write and save n
 
 Since the applications front end was provided in the starter code, my job was to build the backend and connect it with the front end and then deploy the entire application to Heroku.
 
-Please view the deployed applicated <a href ="https://abauer424.github.io/write-me-notes/"> here. </a>
+I am hoping to revisit this project to fix any bugs that is causing the notes not to dislpay.
+
+Please view the deployed applicated <a href ="https://abauer424.github.io/write-me-notes/index.html"> here. </a>
 
 
 ## Table of Contents 
