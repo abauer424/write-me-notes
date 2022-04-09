@@ -24,14 +24,11 @@ To install the project, you need to use git clone and git pull from <a href ="ht
 
 ## Usage 
 
-When opening the repository, first the user
-<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image1.png" alt="image of terminal"/>
+When opening the server http://localhost:3001/ the user will see the image below.
+<img src="https://github.com/abauer424/write-me-notes/blob/main/develop/public/images/image1.png" alt="image of note taker"/>
 
-Next the user will 
-<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image2.png" alt="image of terminal"/>
-
-Lastly the user will 
-<img src="https://github.com/abauer424/team-profile-generator/blob/main/src/images/image3.png" alt="image of terminal"/>
+Next when the user clicks "get started" they will be redirected to the page below:
+<img src="https://github.com/abauer424/write-me-notes/blob/main/develop/public/images/image2.png" alt="image of place to add notes"/>
 
 
 ## Credits
