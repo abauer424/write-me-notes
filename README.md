@@ -25,10 +25,10 @@ To install the project, you need to use git clone and git pull from <a href ="ht
 ## Usage 
 
 When opening the server http://localhost:3001/ the user will see the image below.
-<img src="https://github.com/abauer424/write-me-notes/blob/main/develop/public/images/image1.png" alt="image of note taker"/>
+<img src="https://github.com/abauer424/write-me-notes/blob/main/Develop/public/assets/images/image1.png" alt="image of note taker"/>
 
 Next when the user clicks "get started" they will be redirected to the page below:
-<img src="https://github.com/abauer424/write-me-notes/blob/main/develop/public/images/image2.png" alt="image of place to add notes"/>
+<img src="https://github.com/abauer424/write-me-notes/blob/main/Develop/public/assets/images/image2.png" alt="image of place to add notes"/>
 
 
 ## Credits
