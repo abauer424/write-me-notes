@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const notes = require('./Develop/db/db.json');
+const notes = require('./db/db.json');
 const PORT = 3001;
 const util = require('util');
 
@@ -13,11 +13,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./Develop/public'));
 
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, './index.html'))
+  res.sendFile(path.join(__dirname, './public/index.html'))
 );
 
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, './notes.html'))
+  res.sendFile(path.join(__dirname, './public/notes.html'))
 );
 
 // app.get('*', (req, res) =>
@@ -26,7 +26,7 @@ app.get('/notes', (req, res) =>
 const readFile = util.promisify(fs.readFile)
 
 function readNotes(){
-return readFile('./Develop/db/db.json', 'utf-8')
+return readFile('./db/db.json', 'utf-8')
 
 }
 function getNotes() {
