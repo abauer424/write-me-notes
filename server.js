@@ -21,7 +21,7 @@ app.get('/notes', (req, res) =>
 );
 
 app.get('/style', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/assets/css/style.css'))
+  res.sendFile(path.join(__dirname, './public/assets/css/styles.css'))
 );
 
 // app.get('*', (req, res) =>
