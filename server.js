@@ -49,6 +49,10 @@ app.get('/api/notes', (req, res) => {
   .then(notes => console.log(notes))
 });
 
+app.post('/api/notes', (req, res) => {
+  const newNote = createNewNote(req.body, allNotes);
+  res.json(newNote);
+});
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
