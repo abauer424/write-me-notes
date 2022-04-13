@@ -49,28 +49,6 @@ app.get('/api/notes', (req, res) => {
   .then(notes => console.log(notes))
 });
 
- // Obtain existing reviews
- fs.readFile('./db/db.json', 'utf8', (err, data) => {
-  if (err) {
-    console.error(err);
-  } else {
-    // Convert string into JSON object
-    const parsedNotes = JSON.parse(data);
-
-    // Add a new review
-    parsedReviews.push(newNote);
-
-    // Write updated reviews back to the file
-    fs.writeFile(
-      './db/db.json',
-      JSON.stringify(parsedNotes, null, 4),
-      (writeErr) =>
-        writeErr
-          ? console.error(writeErr)
-          : console.info('Successful!')
-    );
-  }
-});
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
