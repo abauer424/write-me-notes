@@ -8,7 +8,7 @@ Since the applications front end was provided in the starter code, my job was to
 
 I am hoping to revisit this project to fix any bugs that is causing the notes not to dislpay.
 
-Please view the deployed applicated <a href ="https://abauer424.github.io/write-me-notes/index.html"> here. </a>
+Please view the deployed Heroku applicated <a href ="https://write-me-notes.herokuapp.com/"> here. </a>
 
 
 ## Table of Contents 
