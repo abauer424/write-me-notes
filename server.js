@@ -46,10 +46,10 @@ function getNotes() {
 }
 // GET request for notes
 app.get('/api/notes', (req, res) => {
-  // const newNote = createNewNote(req.noteText, notes);
-  // res.json(newNote)
+  const newNote = createNewNote(req.noteText, notes);
+  res.json(newNote)
   getNotes().then(notes => res.json(notes))
-  // .then(notes => console.log(notes))
+  .then(notes => console.log(notes))
 });
 
 app.listen(PORT, () =>
