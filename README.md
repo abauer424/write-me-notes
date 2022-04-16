@@ -8,7 +8,7 @@ Since the applications front end was provided in the starter code, my job was to
 
 I am hoping to revisit this project to fix any bugs that is causing the notes not to dislpay.
 
-Please view the deployed Heroku applicated <a href ="https://write-me-notes.herokuapp.com/"> here. </a>
+Please view the deployed Heroku applicated <a href ="https://powerful-springs-14046.herokuapp.com"> here. </a>
 
 
 ## Table of Contents 
@@ -29,7 +29,7 @@ To install the project, you need to use git clone and git pull from <a href ="ht
 When opening the server http://localhost:3001/ the user will see the image below.
 <img src="https://github.com/abauer424/write-me-notes/blob/main/public/assets/images/image1.png" alt="image of note taker"/>
 
-Next when the user clicks "get started" they will be redirected to the page below:
+Next when the user clicks "get started" they will be redirected to the page below and can add notes by typing in a title & description and clicking the save icon.
 <img src="https://github.com/abauer424/write-me-notes/blob/main/public/assets/images/image2.png" alt="image of place to add notes"/>
 
 
