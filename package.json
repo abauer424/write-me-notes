@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/abauer424/write-me-notes#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
   }
 }
